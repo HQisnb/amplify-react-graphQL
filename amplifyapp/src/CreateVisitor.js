@@ -14,6 +14,7 @@ const Visitor = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const visitor = { name, body, rate, job };
+        console.log(visitor);
         console.log("added");
     }
 
@@ -21,39 +22,7 @@ const Visitor = () => {
         <div className="make-visitor">
             <h2>You don't have to, but...</h2>
             <p>Wish you can leave some infomation about you!</p>
-            <form onSubmit={handleSubmit}>
-                <label>Name:</label>
-                <input 
-                type="text"
-                required 
-                value={name} 
-                onChange={(e) => setName(e.target.value)} 
-                />
-                <label>Suggestion for this website:</label>
-                <textarea 
-                required
-                value={body} 
-                onChange={(e) => setBody(e.target.value)}>
-                </textarea>
-                <label>Rate the website:</label>
-                <select
-                required 
-                value={rate} 
-                onChange={(e) => setRate(e.target.value)}>
-                    <option value="Love it">Love it</option>
-                    <option value="It's OK">It's OK</option>
-                    <option value="Another :(">Another @_@</option>
-                </select>
-                <label>Are you...</label>
-                <select
-                value={job} 
-                onChange={(e) => setJob(e.target.value)}>
-                    <option value="friends">Friend</option>
-                    <option value="recruiter">Recruiter</option>
-                    <option value="other">Other</option>
-                </select>
-                <button>Leave Footprint</button>
-            </form>
+            <h1>Thanks for your time, but this is not done yet.</h1>
         </div>
       );
 }
