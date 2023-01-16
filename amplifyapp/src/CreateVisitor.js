@@ -14,17 +14,7 @@ const Visitor = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const visitor = { name, body, rate, job };
-
-        fetch('http://localhost:8000/visitor/', {
-            method: 'POST',
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(visitor)
-        }).then(() => {
-            console.log('new visitor added');
-            console.log(visitor);
-            // history.go(-1);
-            history.push('/');
-        })
+        console.log("added");
     }
 
     return (

@@ -1,13 +1,11 @@
 import { Link } from 'react-router-dom';
 import { useState } from "react";
-import useFetch from './useFetch';
-import CourseList from './CourseList';
 
 const Carrer = () => {
 
     const [subject, setSubject] = useState('CS');
 
-    const {data: course, pending, error} = useFetch('http://localhost:5000/course');
+    const course = "Many CS, STAT and MATH..."; 
 
     const [show, setShow] = useState(false);
 
@@ -39,10 +37,8 @@ const Carrer = () => {
             </select>
             <button onClick={() => setShow(true)}>Show</button>
             <button onClick={() => setShow(false)}>Close</button>
-            {error && <div>{error}</div>}
-            {course && show && subject !== "OTHER" && <CourseList course={course.filter(courses => courses.subject === subject)} /> }
-            {course && show && subject === "OTHER" && <CourseList course={course.filter(courses => courses.subject !== "CS" && courses.subject !== "STAT") } />}
-
+            <h1>{course}</h1> 
+           
           </div>
         </div>
         
