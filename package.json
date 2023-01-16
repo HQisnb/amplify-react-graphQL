@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@aws-amplify/cli": "^10.6.1"
+    "@aws-amplify/cli": "^10.6.1",
+    "react-router-dom": "^5.3.4"
   }
 }
