@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 2021 Developer Crash Course</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   <div class="navbar">
+       <div class="container">
+
+           <a class="logo" href="#">Intro<span>HZ</span></a>
+
+           <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+
+                <ul class="primary-nav"> 
+                    <li class="current"><a class="kk" href="#">Home</a></li>
+                    <li><a class="kk" href="#">Story</a></li>
+                    <li><a class="kk" href="#">Ins</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a class="kk" href="#">Hobbies</a></li>
+                    <li class="go-premium-cta"><a class="kk", href="https://www.linkedin.com/in/haoqi-zhang-b6a86721a">Resume</a></li>
+                </ul>
+            </nav>
+       </div>
+   </div>
+
+   <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">It is Haoqi &amp; (Nickname from his friends)</p>
+                <h1>Jelly Boy</h1>
+                <h1>Thanos in All-you-can-eat Buffet</h1>
+                <h1>"Skip List"</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Click Here</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="images/watch.svg" alt="Watch a Video">See Intro Video
+                    </a>
+
+                </div>
+            </div>
+            <img class="hero-image" src="images/illustration.svg" alt="Illustration">
+        </div>
+   </section>
+
+   <section class="features-section">
+       <div class="container">
+        <h2>Some advantages not relevant to Academic Aspect</h2>
+            <ul class="features-list">
+                <li class="jjj"><img class="check" src="images/check.svg">Sports</li>
+                <li class="jjj"><img class="check" src="images/check.svg">Optimist</li>
+                <li class="jjj"><img class="check" src="images/check.svg">Learn Fast</li>
+                <li class="jjj"><img class="check" src="images/check.svg">Humous</li>
+                <li class="jjj"><img class="check" src="images/check.svg">Friendly</li>
+                <li class="jjj"><img class="check" src="images/check.svg">Communication</li>     
+            </ul>
+            <img class="databoy" src="images/works.jpg" alt="My Programs">
+       </div>
+   </section>
+
+   <section class="stss">
+       <div class="container">
+        <ul>
+            <li class="sts">
+                <img class="sentences" src="images/person.jpg" alt="Person">
+                <blockquote>I love pets!</blockquote>
+                <cite>- So I have 4 kitties!!!</cite>
+                <img class="kitt" src="images/cat1.jpeg" alt="Person">
+                <img class="kitt" src="images/cat2.jpeg" alt="Person">
+                <img class="kitt" src="images/cat3.jpeg" alt="Person">
+                <img class="kitt" src="images/cat4.jpeg" alt="Person">
+            </li>
+            <li class="sts"> 
+                <img class="sentences" src="images/person.jpg" alt="Person">
+                <blockquote>I am a sneaker lover!</blockquote>
+                <cite>- I am trying to stop buying shoes~</cite>
+                <img class="kitt" src="images/sneakers.jpeg" alt="Person">
+            </li>
+            <li class="sts">
+                <img class="sentences" src="images/person.jpg" alt="Person">
+                <blockquote>I love HORROR Movies!</blockquote>
+                <cite>- It helps me lose weight :( JK</cite>
+                <img class="kitt" src="images/eat.jpeg" alt="Person">
+            </li>
+        </ul>
+       </div>
+   </section>
+
+   <section class="contact-section">
+    <div class="container">
+        <div class="contact-left">
+            <h2>Contact</h2>
+            <form action="mailto:zhang001221@gmail.com", method="post", enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Preferred Name">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="10" rows="10"></textarea>
+
+                <input type="submit" class="send-message-cta" value="Send Message">
+            </form>
+        </div>
+        <div class="contact-right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.440085581776!2d-80.54704628460969!3d43.47228537912792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf6ad02edccff%3A0xdd9df23996268e17!2sUniversity%20of%20Waterloo!5e0!3m2!1sen!2sjp!4v1646378059504!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    </div>
+   </section>
+   <script>
+        const mobileBtn = document.getElementById('mobile-cta');
+            nav = document.querySelector('nav');
+            mobileBtnExit = document.getElementById('mobile-exit');
+        mobileBtn.addEventListener('click',() => {
+            nav.classList.add('menu-sss');
+        })
+
+        mobileBtnExit.addEventListener('click',() => {
+            nav.classList.remove('menu-sss');
+        })
+   </script>
+
+   <section class="relevantCourses">
+    <label for="course">What I Can Do:</label><br>
+    <input type="text", id="courseee", name="course", placeholder="One of : CS, STAT, MATH, OTHER">
+    <input type="button", value="Look", id="but1", onclick="showCourse()">
+    <p id="output1"></p>
+    <p id="output2"></p>
+    <p id="output3"></p>
+    <p id="output4"></p>
+    <script type="text/javascript">
+            var courses = {
+    "CS":{
+        "name":"Computer Science",
+        "programming language":["C++ & C", "Python", "SQL", "R"],
+        "content":["Algorithm", "Data Structures", 
+        "Machine Learning", "SQL", "Object-oriented-programming", "and more!!!"],
+        "skills to do well":"sleep well then work more efficient~"
+    },
+
+    "STAT":{
+        "name":"Statistics/Analyzing Data",
+        "programming language":"R studio",
+        "content":["Plot", "Stat Models", "Classification"],
+        "skills to do well":"go to lectures and read slides :)"
+    },
+
+    "MATH":{
+        "name":"Math",
+        "programming language":"No",
+        "content":["CO and Graph", "Algebra", "Geometry", "Matrix"],
+        "skills to do well":"greatly depend on individuals"
+    },
+
+    "OTHER":{
+        "name":"bird/elective",
+        "programming language":"No",
+        "content":"No",
+        "skills to do well":"attend the exams"
+    }
+};
+            var out1 = document.getElementById("output1");
+            var out2 = document.getElementById("output2");
+            var out3 = document.getElementById("output3");
+            var out4 = document.getElementById("output4");
+            function showCourse() {
+                const inputtt = document.getElementById("courseee").value;
+                alert("the value is: "+inputtt);
+                //alert(courses[inputtt]["name"]);
+                out1.innerHTML = "Subject : " + courses[inputtt]["name"];
+                out2.innerHTML = "Programming Language : " + courses[inputtt]["programming language"];
+                out3.innerHTML = "Content : " + courses[inputtt]["content"];
+                out4.innerHTML = "How to do well : " + courses[inputtt]["skills to do well"];
+                //out1.innerHTML = inputtt;
+            }
+
+
+    </script>
+
+
+   </section>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+    "CS":{
+        "name":"Computer Science",
+        "programming language":["C++ & C", "Python", "SQL", "R"],
+        "content":["Algorithm", "Data Structures", 
+        "Machine Learning", "SQL", "Object-oriented-programming", "and more!!!"],
+        "skills to do well":"sleep well then work more efficient~"
+    },
+
+    "STAT":{
+        "name":"Statistics/Analyzing Data",
+        "programming language":"R studio",
+        "content":["Plot", "Stat Models", "Classification"],
+        "skills to do well":"go to lectures and read slides :)"
+    },
+
+    "MATH":{
+        "name":"Math",
+        "programming language":"Hand and Brain",
+        "content":["CO and Graph", "Algebra", "Geometry", "Matrix"],
+        "skills to do well":"greatly depend on individuals"
+    },
+
+    "OTHER":{
+        "name":"bird/elective",
+        "programming language":"No",
+        "content":"No",
+        "skills to do well":"attend the exams"
+    }
+}
